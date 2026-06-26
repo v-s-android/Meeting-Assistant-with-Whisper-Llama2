@@ -23,3 +23,9 @@ Then run:
 ```
 sudo apt install ffmpeg -y
 ```
+
+Procedure
+
+we'll set up a language model (LLM) instance, which could be **IBM WatsonxLLM, HuggingFaceHub, or an OpenAI model**. Then, we'll establish a prompt template. These templates are structured guides to generate prompts for language models, aiding in output organization 
+
+Next, we'll develop a transcription function that employs the OpenAI Whisper model to convert speech-to-text. This function takes an audio file uploaded through a Gradio app interface (preferably in .mp3 format). The transcribed text is then fed into an **LLMChain**, which integrates the text with the prompt template and forwards it to the chosen LLM. The final output from the LLM is then displayed in the Gradio app's output textbox.

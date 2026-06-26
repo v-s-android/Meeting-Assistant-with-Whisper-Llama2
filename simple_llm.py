@@ -12,7 +12,7 @@ params = {
     }
 
 LLAMA2_model = Model(
-        model_id= 'meta-llama/llama-3-2-11b-vision-instruct', 
+        model_id= 'meta-llama/llama-4-maverick-17b-128e-instruct-fp8', 
         credentials=my_credentials,
         params=params,
         project_id="skills-network",  
